@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEMORY CREATOR — Editing Services</title>
+<meta name="description" content="MEMORY CREATOR — professional photo and video editing services.">
+<style>
+:root{--gold:#d4af37;--gold2:#f5d76e;--black:#050505;--panel:#111;--muted:#b9b9b9}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--black);color:#fff;line-height:1.6}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 20% 10%,rgba(212,175,55,.13),transparent 30%),radial-gradient(circle at 90% 80%,rgba(212,175,55,.08),transparent 28%);z-index:-1}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:fixed;top:0;width:100%;z-index:10;background:rgba(5,5,5,.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(212,175,55,.18)}
+nav{height:74px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:2px}
+.logo{width:44px;height:44px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-weight:900;box-shadow:0 0 20px rgba(212,175,55,.18)}
+.brand span{color:var(--gold)}
+nav ul{display:flex;gap:26px;list-style:none;font-size:14px}
+nav a:hover{color:var(--gold2)}
+.hero{min-height:100vh;display:grid;place-items:center;padding-top:74px;text-align:center}
+.badge{display:inline-block;border:1px solid rgba(212,175,55,.5);color:var(--gold2);padding:7px 16px;border-radius:999px;font-size:12px;letter-spacing:2px;margin-bottom:22px}
+h1{font-size:clamp(48px,9vw,94px);line-height:.95;letter-spacing:5px}
+h1 em{font-style:normal;color:var(--gold);text-shadow:0 0 30px rgba(212,175,55,.18)}
+.hero p{max-width:650px;margin:24px auto;color:var(--muted);font-size:18px}
+.btn{display:inline-block;padding:13px 24px;border-radius:8px;font-weight:800;margin:5px;border:1px solid var(--gold)}
+.btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#080808;border:0}
+section{padding:95px 0}
+.section-title{text-align:center;margin-bottom:48px}
+.section-title small{color:var(--gold);letter-spacing:3px;font-weight:800}
+.section-title h2{font-size:42px;margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:linear-gradient(145deg,#151515,#0b0b0b);border:1px solid rgba(212,175,55,.18);border-radius:18px;padding:28px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:rgba(212,175,55,.65)}
+.icon{font-size:30px;color:var(--gold);margin-bottom:15px}
+.card h3{font-size:21px;margin-bottom:8px}.card p{color:var(--muted);font-size:14px}
+.price{margin-top:20px;font-size:22px;color:var(--gold2);font-weight:900}
+.price span{font-size:12px;color:#999;font-weight:500}
+.contact{background:linear-gradient(135deg,#111,#070707);border:1px solid rgba(212,175,55,.25);border-radius:24px;padding:45px;text-align:center}
+.phone{font-size:clamp(26px,5vw,46px);font-weight:900;color:var(--gold2);letter-spacing:1px;margin:16px 0}
+footer{padding:30px 0;border-top:1px solid rgba(212,175,55,.15);text-align:center;color:#888;font-size:13px}
+@media(max-width:760px){nav ul{display:none}.grid{grid-template-columns:1fr}.hero p{font-size:16px}.contact{padding:30px 18px}section{padding:75px 0}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav>
+<a class="brand" href="#"><div class="logo">MC</div><div>MEMORY <span>CREATOR</span></div></a>
+<ul><li><a href="#services">Services</a></li><li><a href="#prices">Prices</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav></div></header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="badge">PREMIUM EDITING STUDIO</div>
+<h1>MEMORY <em>CREATOR</em></h1>
+<p>Turning your photos and videos into premium visual memories with clean, creative and professional editing.</p>
+<a class="btn primary" href="#services">EXPLORE SERVICES</a>
+<a class="btn" href="tel:+916291947728">CALL NOW</a>
+</div>
+</section>
+
+<section id="services"><div class="container">
+<div class="section-title"><small>WHAT WE DO</small><h2>Editing Services</h2></div>
+<div class="grid">
+<div class="card"><div class="icon">✦</div><h3>Photo Editing</h3><p>Professional retouching, color correction, background cleanup and premium photo enhancement.</p></div>
+<div class="card"><div class="icon">▶</div><h3>Video Editing</h3><p>Reels, shorts, cinematic edits, transitions, music sync, captions and social-media ready videos.</p></div>
+<div class="card"><div class="icon">◆</div><h3>Creative Design</h3><p>Posters, thumbnails, social media creatives and custom visual designs for your brand or profile.</p></div>
+</div></div></section>
+
+<section id="prices"><div class="container">
+<div class="section-title"><small>SIMPLE & FLEXIBLE</small><h2>Price & Service</h2></div>
+<div class="grid">
+<div class="card"><h3>Photo Editing</h3><p>Basic to premium photo editing based on your requirements.</p><div class="price">Custom Quote <span>per project</span></div></div>
+<div class="card"><h3>Video Editing</h3><p>Short-form and long-form editing with effects, music and clean storytelling.</p><div class="price">Custom Quote <span>per project</span></div></div>
+<div class="card"><h3>Design Work</h3><p>Posters, thumbnails, banners and social-media creatives.</p><div class="price">Custom Quote <span>per design</span></div></div>
+</div></div></section>
+
+<section id="contact"><div class="container"><div class="contact">
+<div class="section-title" style="margin-bottom:20px"><small>LET'S CREATE</small><h2>Ready to make it memorable?</h2></div>
+<p style="color:#aaa">Call or WhatsApp us to discuss your editing project and get a custom price.</p>
+<div class="phone">+91 62919 47728</div>
+<a class="btn primary" href="https://wa.me/916291947728?text=Hello%20MEMORY%20CREATOR,%20I%20want%20to%20know%20about%20your%20editing%20services.">WHATSAPP US</a>
+<a class="btn" href="tel:+916291947728">CALL</a>
+</div></div></section>
+</main>
+
+<footer>© 2026 MEMORY CREATOR • Editing Services • Designed in Luxury Black & Gold</footer>
+</body>
+</html>
